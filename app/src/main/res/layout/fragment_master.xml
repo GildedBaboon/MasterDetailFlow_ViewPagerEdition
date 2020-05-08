@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasterFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Daily Tasks:"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tasks"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/currentTasks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/task_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/v_task1"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="Change Task 1"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:background="#808080"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/currentTasks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/v_task2"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="Change Task 2"
+        android:background="#808080"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/v_task1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"  />
+
+    <TextView
+        android:id="@+id/v_task3"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="#808080"
+        android:text="Change Task 3"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/v_task2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"  />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Update All Tasks"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/v_task3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
